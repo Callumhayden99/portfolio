@@ -22,6 +22,9 @@ function Projects() {
             <NavLink to="/info" activeClassName="active">
               <li className="li-items">Info</li>
             </NavLink>
+            <NavLink to="/snippet" activeClassName="active">
+              <li className="li-items">Snippets</li>
+            </NavLink>
           </ul>
         </div>
         <div className="project-right-content">
