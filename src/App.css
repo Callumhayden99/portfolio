@@ -75,7 +75,7 @@ a:hover{
 }
 
 .li-items{
-  display: inline-block;
+  display: grid;
   font-size: 19px;
   font-weight: bold;
   padding-bottom: 15px;

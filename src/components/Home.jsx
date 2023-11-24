@@ -18,7 +18,7 @@ function Home() {
               <li className="li-items">Contact</li>
             </NavLink>
             <NavLink to="/info" activeClassName="active">
-              <li className="li-items">Info</li>
+              <li className="li-items">About me</li>
             </NavLink>
             <NavLink to="/snippet" activeClassName="active">
               <li className="li-items">Snippets</li>
