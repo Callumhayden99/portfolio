@@ -5,8 +5,6 @@ import green1 from "../assets/green1.jpg"
 import green2 from "../assets/green2.jpg"
 import star1 from "../assets/star1.jpg"
 import star2 from "../assets/star2.jpg"
-import star3 from "../assets/star3.jpg"
-import css from "../assets/css.jpg"
 
 function Snippet(){
 
@@ -37,14 +35,12 @@ function Snippet(){
           </ul>
         </div>
         <div className="img-container">
-        <img src={dashboard1} width={800}></img>
-        <img src={dashboard2} width={800}></img>
-        <img src={green1} width={800}></img>
-        <img src={green2} width={800}></img>
-        <img src={star1} width={800}></img>
-        <img src={star2} width={800}></img>
-        <img src={star3} width={800}></img>
-        <img src={css} width={800}></img>
+        <img className="snippet-img" src={dashboard1} width={800}></img>
+        <img className="snippet-img" src={dashboard2} width={800}></img>
+        <img className="snippet-img" src={green1} width={800}></img>
+        <img className="snippet-img" src={green2} width={800}></img>
+        <img className="snippet-img" src={star1} width={800}></img>
+        <img className="snippet-img" src={star2} width={800}></img>
         </div>
       </div>
         </>

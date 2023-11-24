@@ -91,7 +91,7 @@ a:hover{
   grid-area: right-menu;
   color: #186049;
   margin-left: 1500px;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   font-weight: bold;
   padding-left: 70px;
   padding-top: 40px;
@@ -115,7 +115,7 @@ a:hover{
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  margin: -130px 0px 226px 730px;
+  margin: -130px 0px 185px 730px;
   text-align: center; 
 }
 
@@ -165,7 +165,7 @@ p {
   background-color: #fff; 
   font-family: 'Montserrat', sans-serif; 
   padding: 20px; 
-  margin: 0px 50px 170px 480px; 
+  margin: 0px 50px 130px 480px; 
   border-radius: 8px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
   max-width: 800px; 
@@ -179,7 +179,7 @@ p {
 /* project */
 
 .project-right-content{
-  margin-bottom: 235px;
+  margin-bottom: 193px;
 }
 
 .right-title{
@@ -218,5 +218,11 @@ p {
   row-gap: 10px;
   margin-left: 200px;
   margin-top: -200px;
+  padding-bottom: 20px;
   overflow-y: scroll;
+}
+
+.snippet-img{
+  border: 3px solid #186049;
+  border-radius: 5px;
 }
