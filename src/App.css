@@ -1,43 +1,43 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 100vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body{
-    position: relative; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    background: linear-gradient(to top right, #d6ccc2, #eeeae6);
-    font-family: 'Poppins', sans-serif;
-    place-items: center;
+html,
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background: #eeeae6;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
 }
 
 .container {
-  position: relative; 
-  z-index: 2; 
-  grid-template: 
-  
-  "header    header        header" 300px
-  "left-menu main-content  right-menu" 1fr
-  "footer    footer        footer" 1fr/
-   1fr       1fr           300px;
+  position: relative;
+  z-index: 2;
+  grid-template:
+    "header    header        header" 300px
+    "left-menu main-content  right-menu" 1fr
+    "footer    footer        footer" 1fr/
+    1fr 1fr 300px;
 }
 
 .back-border {
   position: relative;
   border: 4px solid #186049;
   border-radius: 3px;
-  z-index: 3; 
+  z-index: 3;
   margin: 20px -290px 530px -305px;
 }
 
-.h1{
+.h1 {
   display: grid;
   grid-area: header;
   font-size: 50px;
@@ -45,7 +45,7 @@ html, body{
   color: #186049;
 }
 
-.h3{
+.h3 {
   display: grid;
   grid-area: header;
   margin-top: -35px;
@@ -70,8 +70,8 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:before{
-  content: '';
+a:before {
+  content: "";
   background: #8a8a8a;
   display: block;
   position: absolute;
@@ -83,10 +83,10 @@ a:before{
 }
 
 a:hover {
- background-position: 0;
+  background-position: 0;
 }
 
-a:hover::before{
+a:hover::before {
   width: 100%;
 }
 
@@ -94,7 +94,7 @@ a:hover::before{
   color: rgb(138, 138, 138);
 }
 
-.ul{
+.ul {
   display: grid;
   grid-area: left-menu;
   list-style: none;
@@ -102,7 +102,7 @@ a:hover::before{
   max-width: 90px;
 }
 
-.li-items{
+.li-items {
   display: grid;
   font-size: 19px;
   font-weight: bold;
@@ -110,11 +110,11 @@ a:hover::before{
   color: #186049;
 }
 
-.li-items:hover{
+.li-items:hover {
   color: #186049;
 }
 
-.right-menu{
+.right-menu {
   display: grid;
   grid-area: right-menu;
   color: #186049;
@@ -124,11 +124,11 @@ a:hover::before{
   padding-left: 70px;
   padding-top: 40px;
   padding-right: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 19px;
 }
 
-.h2-contact{
+.h2-contact {
   text-decoration: underline;
 }
 
@@ -137,14 +137,14 @@ a:hover::before{
   grid-template-columns: 1fr;
   row-gap: 20px;
   border: 2px solid white;
-  width: 100%; 
-  max-width: 400px; 
+  width: 100%;
+  max-width: 400px;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
   margin: -130px 0px 150px 730px;
-  text-align: center; 
+  text-align: center;
 }
 
 .input {
@@ -153,12 +153,12 @@ a:hover::before{
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 10px;
-  width: calc(100% - 30px); 
+  width: calc(100% - 30px);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .form-button {
-  background-color: #186049; 
+  background-color: #186049;
   color: black;
   font-weight: bold;
   border-radius: 5px;
@@ -167,15 +167,15 @@ a:hover::before{
   border: none;
   width: calc(100% - 30px);
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .form-button:hover {
-  background-color: darkgrey; 
+  background-color: darkgrey;
 }
 
 /* info */
-.icons-container{
+.icons-container {
   display: grid;
   text-align: center;
   grid-template-columns: repeat(5, 80px);
@@ -183,62 +183,62 @@ a:hover::before{
   margin-top: -100px;
 }
 
-.info-title{
+.info-title {
   color: #186049;
   text-align: center;
 }
 
 p {
-  color: #333; 
-  background-color: #fff; 
-  font-family: 'Montserrat', sans-serif; 
-  padding: 20px; 
-  margin: 0px 50px 95px 480px; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-  max-width: 800px; 
-  line-height: 1.6; 
-  font-size: 1rem; 
-  border: 1px solid #ddd; 
-  z-index: 10; 
+  color: #333;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  margin: 0px 50px 95px 480px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  z-index: 10;
   position: relative;
 }
 
 /* project */
-.project-right-content{
+.project-right-content {
   margin-bottom: 128px;
 }
 
-.right-title{
+.right-title {
   color: #186049;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: "Montserrat", sans-serif;
   text-align: end;
   padding-right: 60px;
 }
 
-.right-li{
+.right-li {
   color: #186049;
   list-style: none;
   text-align: end;
   font-size: 40px;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: "Montserrat", sans-serif;
   padding-right: 60px;
- text-align: end;
+  text-align: end;
 }
 
-.right-sub-li{
+.right-sub-li {
   color: #186049;
   list-style: none;
   text-align: end;
   font-size: 20px;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: "Montserrat", sans-serif;
   text-align: end;
   padding-right: 60px;
   margin-bottom: 20px;
 }
 
-.img-container{
+.img-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
@@ -249,53 +249,87 @@ p {
   overflow-y: scroll;
 }
 
-.snippet-img{
+.snippet-img {
   border: 3px solid #186049;
   border-radius: 5px;
 }
 
-
 /* media */
-
-/* Styles for small desktops (901px to 1200px) */
 @media only screen and (max-width: 1200px) {
-  #root, .container, .back-border, .form-container, .icons-container, .img-container {
-      /* Adjust the width and margins to ensure content fits within this viewport */
-      max-width: 100%;
-      margin: auto;
+  #root,
+  .container,
+  .back-border,
+  .form-container,
+  .icons-container,
+  .img-container {
+    /* Adjust the width and margins to ensure content fits within this viewport */
+    max-width: 100%;
+    margin: auto;
+    margin-right: 10px;
   }
   .right-menu {
-      /* Adjust or hide the right-menu to prevent overflow */
-      display: none; /* or adjust its position */
+    margin-left: 810px;
+    margin-bottom: 80px;
   }
-  /* Additional styling adjustments here */
+  .form-container {
+    max-width: 400px;
+    padding: 30px;
+    margin: -130px 0px 190px 370px;
+  }
+  a {
+    margin-bottom: 13px;
+  }
+  .icons-container {
+    margin-left: 400px;
+    margin-top: -100px;
+  }
+  p {
+    margin: 0px 50px 135px 135px;
+    max-width: 800px;
+  }
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+    row-gap: 10px;
+    margin-left: 200px;
+    margin-top: -200px;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+  }
 }
 
-/* Styles for tablets (601px to 900px) */
-@media only screen and (max-width: 900px) {
-  /* Adjust grid layout */
-  .container {
-      grid-template:
-          "header" auto
-          "left-menu main-content" 1fr
-          "footer" auto /
-          300px 1fr;
-  }
-  /* Additional styling adjustments here */
-}
-
-/* Styles for mobile devices (up to 600px) */
 @media only screen and (max-width: 600px) {
-  .container {
-      grid-template:
-          "header" auto
-          "main-content" 1fr
-          "footer" auto /
-          1fr;
+  #root {
+    max-width: 600px;
   }
-  .left-menu, .right-menu {
-      /* Hide or adjust navigation for mobile */
-      display: none;
+  .right-menu {
+    font-size: 17px;
+    margin-left: 310px;
+    margin-bottom: 160px;
+    margin-top: -350px;
   }
-  /* Additional styling adjustments here */
+  .form-container {
+    max-width: 400px;
+    padding: 30px;
+    margin: 20px 0px 190px 50px;
+  }
+  a {
+    margin-bottom: 5px;
+  }
+  .icons-container {
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  p {
+    margin: 0px 50px 135px 80px;
+    max-width: 800px;
+  }
+  .img-container {
+    margin-left: 5px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
 }
