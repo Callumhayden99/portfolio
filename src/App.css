@@ -253,3 +253,49 @@ p {
   border: 3px solid #186049;
   border-radius: 5px;
 }
+
+
+/* media */
+
+/* Styles for small desktops (901px to 1200px) */
+@media only screen and (max-width: 1200px) {
+  #root, .container, .back-border, .form-container, .icons-container, .img-container {
+      /* Adjust the width and margins to ensure content fits within this viewport */
+      max-width: 100%;
+      margin: auto;
+  }
+  .right-menu {
+      /* Adjust or hide the right-menu to prevent overflow */
+      display: none; /* or adjust its position */
+  }
+  /* Additional styling adjustments here */
+}
+
+/* Styles for tablets (601px to 900px) */
+@media only screen and (max-width: 900px) {
+  /* Adjust grid layout */
+  .container {
+      grid-template:
+          "header" auto
+          "left-menu main-content" 1fr
+          "footer" auto /
+          300px 1fr;
+  }
+  /* Additional styling adjustments here */
+}
+
+/* Styles for mobile devices (up to 600px) */
+@media only screen and (max-width: 600px) {
+  .container {
+      grid-template:
+          "header" auto
+          "main-content" 1fr
+          "footer" auto /
+          1fr;
+  }
+  .left-menu, .right-menu {
+      /* Hide or adjust navigation for mobile */
+      display: none;
+  }
+  /* Additional styling adjustments here */
+}
