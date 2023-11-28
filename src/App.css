@@ -366,9 +366,9 @@ p {
     margin-right: -30px;
   }
   .icons-container img {
+    grid-template-columns: repeat(5, 30px);
     width: 40%; 
-    height: auto; 
-    margin: 0 auto; 
+    height: auto;
     display: inline-block; 
     margin-left: -90px;
   }
