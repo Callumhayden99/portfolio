@@ -31,7 +31,7 @@ function Projects() {
           <div className="right-title">My projects (design & develop)</div>
           <ul className="right-ul">
             <li className="right-li">
-              <a href="#star-wars-project">Star Wars Project</a>
+              <a href="https://github.com/Callumhayden99/starwars-project">Star Wars Project</a>
               <ul>
                 <li className="right-sub-li">2023/Project</li>
               </ul>
