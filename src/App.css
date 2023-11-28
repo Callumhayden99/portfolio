@@ -14,8 +14,8 @@ html, body{
     object-fit: cover;
     z-index: -1;
     background: linear-gradient(to top right, #d6ccc2, #eeeae6);
-  
-  
+    font-family: 'Poppins', sans-serif;
+    place-items: center;
 }
 
 .container {
@@ -53,13 +53,41 @@ html, body{
   color: #186049;
 }
 
-a{
-  text-decoration: none;
-  color: #186049;
+a {
+  background-image: linear-gradient(
+    to right,
+    #8a8a8a,
+    #186049 50%,
+    #186049 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-a:hover{
-  color: darkgrey;
+a:before{
+  content: '';
+  background: #8a8a8a;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before{
+  width: 100%;
 }
 
 .active .li-items {
@@ -83,7 +111,7 @@ a:hover{
 }
 
 .li-items:hover{
-  color: rgb(138, 138, 138);
+  color: #186049;
 }
 
 .right-menu{
@@ -91,7 +119,7 @@ a:hover{
   grid-area: right-menu;
   color: #186049;
   margin-left: 1500px;
-  margin-bottom: 50px;
+  margin-bottom: 17px;
   font-weight: bold;
   padding-left: 70px;
   padding-top: 40px;
@@ -115,7 +143,7 @@ a:hover{
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  margin: -130px 0px 185px 730px;
+  margin: -130px 0px 142px 730px;
   text-align: center; 
 }
 
@@ -166,7 +194,7 @@ p {
   background-color: #fff; 
   font-family: 'Montserrat', sans-serif; 
   padding: 20px; 
-  margin: 0px 50px 130px 480px; 
+  margin: 0px 50px 87px 480px; 
   border-radius: 8px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
   max-width: 800px; 
@@ -180,7 +208,7 @@ p {
 /* project */
 
 .project-right-content{
-  margin-bottom: 193px;
+  margin-bottom: 120px;
 }
 
 .right-title{
@@ -197,8 +225,8 @@ p {
   text-align: end;
   font-size: 40px;
   font-family: 'Montserrat', sans-serif; 
-  text-align: end;
   padding-right: 60px;
+ text-align: end;
 }
 
 .right-sub-li{
