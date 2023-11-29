@@ -291,6 +291,21 @@ p {
 
 
 /* media */
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+  .form-container {
+    max-width: 400px;
+    padding: 30px;
+    margin: 0px 0px 150px 500px;
+  }
+  .icons-container {
+    margin-left: 480px; 
+    grid-template-columns: repeat(5, 100px); 
+  }
+  p {
+    margin: 20px auto; 
+    max-width: 800px; 
+  }
+
 @media only screen and (max-width: 1024px) {
   #root,
   .container,
