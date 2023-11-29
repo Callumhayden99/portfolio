@@ -6,7 +6,6 @@
 }
 
 html {
-  height: 100%;
   box-sizing: border-box;
 }
 
@@ -14,6 +13,7 @@ body {
   margin: 10px;
   padding: 0;
   border: 4px solid #186049;
+  border-radius: 5px;
   box-sizing: border-box;
   z-index: -1;
   background: #eeeae6;
@@ -259,6 +259,25 @@ p {
   margin-bottom: 20px;
 }
 
+.snippet-info{
+  font-size: 25px;
+  text-align: center;
+  border: solid 2px #186049;
+  background-color: #186049;
+  border-radius: 10px;
+  color: white;
+  margin-left: 550px;
+  margin-right: 200px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.snippet-info:hover {
+  transform: scale(1.05); /* Slightly increase the size */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+
 .img-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr); /* Example for responsive columns */
@@ -287,6 +306,9 @@ p {
 
 .image-text {
   grid-row: 2; 
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 
@@ -305,6 +327,7 @@ p {
     margin: 20px auto; 
     max-width: 800px; 
   }
+}
 
 @media only screen and (max-width: 1024px) {
   #root,

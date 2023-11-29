@@ -34,6 +34,7 @@ function Snippet() {
           </ul>
         </div>
         <div className="img-container">
+          <div className="snippet-info">Here's some snippets of my previous course work and indivdual projects that i've previously completed!</div>
           <div className="image-box">
             <img className="snippet-img" src={dashboard1} alt="Dashboard 1" />
             <div className="image-text">Dashboard 1</div>
