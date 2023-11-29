@@ -379,11 +379,27 @@ p {
     max-width: 800px;
   }
   .img-container {
-    margin-left: 5px;
-    margin-top: 50px;
-    padding-bottom: 20px;
-    overflow-y: scroll;
-    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px; 
+    margin: 0px 0px 30px 35px;
+    width: 100%;
+  }
+  .image-box {
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    background-color: #186049; 
+    margin-left: 0px;
+    margin-right: 50px;
+    padding: 20px 20px 30px 20px; 
+    border-radius: 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    align-items: center; 
+    text-align: center; 
+  }
+  .snippet-img {
+   width: 500px;
+    grid-row: 1; 
   }
 }
 
@@ -441,12 +457,29 @@ p {
     max-width: 400px;
   }
   .img-container {
-    margin-left: 5px;
-    margin-top: 50px;
-    padding-bottom: 20px;
-    overflow-y: scroll;
-    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px; 
+    margin: 0px 0px 30px 35px;
+    width: 100%;
   }
+  .image-box {
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    background-color: #186049; 
+    margin-left: 0px;
+    margin-right: 50px;
+    padding: 20px 20px 30px 20px; 
+    border-radius: 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    align-items: center; 
+    text-align: center; 
+  }
+  .snippet-img {
+   width: 500px;
+    grid-row: 1; 
+  }
+}
   @media only screen and (max-width: 390px) {
     .right-menu {
       font-size: 14px;
@@ -520,6 +553,27 @@ p {
         margin: 0px 45px 135px 15px;
         max-width: 250px;
       }
+      .img-container {
+        margin: 0px 0px 30px 35px;
+        width: 100%;
+      }
+      .image-box {
+        display: grid;
+        grid-template-rows: auto 1fr; 
+        background-color: #186049; 
+        margin-left: 0px;
+        margin-right: 50px;
+        padding: 20px 20px 30px 20px; 
+        border-radius: 20px; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        align-items: center; 
+        text-align: center; 
+      }
+      .snippet-img {
+        width: 300px;
+        grid-row: 1; 
+      }
     }
-  }
-}
+    }
+  
+
