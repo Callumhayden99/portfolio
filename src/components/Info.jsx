@@ -29,7 +29,6 @@ function Info() {
             </NavLink>
           </ul>
         </div>
-        <div>
           <div className="icons-container">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
@@ -76,7 +75,6 @@ function Info() {
             imprint on the front-end landscape. 
           </p>
         </div>
-      </div>
     </>
   );
 }
