@@ -26,6 +26,7 @@ function Home() {
           </ul>
         </div>
         <div className="right-menu">
+          <h3>Welcome,</h3>
           As a web developer,<br></br> I bring a strong blend <br></br>of
           technical expertise <br></br>and creativity,<br></br>enabling me to
           develop<br></br> innovative and <br></br>user-friendly websites
