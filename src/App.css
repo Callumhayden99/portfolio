@@ -291,24 +291,6 @@ p {
 
 
 /* media */
-@media only screen and(min-width: 1025px){
-  .form-container {
-    max-width: 400px;
-    padding: 30px;
-    margin: 0px 0px 150px 500px;
-  }
-  .icons-container {
-    margin-left: 550px;
-    margin-top: 20px;
-  }
-  .info-title {
-    margin-right: 20px;
-  }
-  p {
-    margin: 0px 50px 135px 100px;
-    max-width: 800px;
-  }
-}
 @media only screen and (max-width: 1024px) {
   #root,
   .container,
