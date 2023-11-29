@@ -273,14 +273,13 @@ p {
 }
 
 .snippet-info:hover {
-  transform: scale(1.05); /* Slightly increase the size */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
-
 
 .img-container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Example for responsive columns */
+  grid-template-columns: repeat(1, 1fr); 
   width: 80%;
   grid-gap: 40px; 
   margin-bottom: 50px;
@@ -311,7 +310,6 @@ p {
   margin-top: 10px;
 }
 
-
 /* media */
 @media only screen and (min-width: 1025px) and (max-width: 1440px){
   .form-container {
@@ -326,6 +324,9 @@ p {
   p {
     margin: 20px auto; 
     max-width: 800px; 
+  }
+  .snippet-info{
+  margin: 0px 0px 0px 340px;
   }
 }
 
@@ -360,13 +361,19 @@ p {
   .img-container {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(3, auto);
     row-gap: 10px;
-    margin-left: 100px;
     margin-top: 50px;
     padding-bottom: 20px;
     overflow-y: scroll;
   }
+  .image-box{
+    margin: 0px 0px 0px 220px;
+  }
+  .snippet-info{
+    margin: 0px 0px 0px 220px;
+    }
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -434,6 +441,9 @@ p {
    width: 500px;
     grid-row: 1; 
   }
+  .snippet-info{
+    margin: 0px 50px 0px 5px;
+    }
 }
 
 @media only screen and (max-width: 450px) {

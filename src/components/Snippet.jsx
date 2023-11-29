@@ -1,10 +1,8 @@
 import { NavLink } from "react-router-dom";
 import dashboard1 from "../assets/dashboard1.jpg";
-import dashboard2 from "../assets/dashboard2.jpg";
-import green1 from "../assets/green1.jpg";
 import green2 from "../assets/green2.jpg";
 import star1 from "../assets/star1.jpg";
-import star2 from "../assets/star2.jpg";
+
 
 function Snippet() {
   return (
@@ -34,7 +32,7 @@ function Snippet() {
           </ul>
         </div>
         <div className="img-container">
-          <div className="snippet-info">Here's some snippets of my previous course work and indivdual projects that i've previously completed!</div>
+          <div className="snippet-info">Here's some snippets of my previous course work and individual projects that i've previously completed!</div>
           <div className="image-box">
             <img className="snippet-img" src={dashboard1} alt="Dashboard 1" />
             <div className="image-text">Dashboard 1</div>
