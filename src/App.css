@@ -365,7 +365,7 @@ p {
     grid-template-columns: repeat(5, 30px);
     width: 30%; 
     height: auto;
-    margin-left: -95px;
+    margin-left: -80px;
   }
   p {
     margin: 0px 70px 135px 70px;
@@ -378,4 +378,24 @@ p {
     overflow-y: scroll;
     overflow-x: scroll;
   }
+  @media only screen and (max-width: 450px) {
+    .right-menu {
+      font-size: 14px;
+      margin-left: 80px;
+      margin-bottom: 60px;
+      margin-top: -260px;
+      width: 320px;
+    }
+    .icons-container img {
+      grid-template-columns: repeat(5, 20px);
+      width: 35%; 
+      height: auto;
+      margin-left: -113px;
+    }
+    p {
+      margin: 0px 70px 135px 20px;
+      width: 280px;
+      max-width: 390px;
+    }
+}
 }
