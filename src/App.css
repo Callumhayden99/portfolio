@@ -363,14 +363,13 @@ p {
   }
   .icons-container img {
     grid-template-columns: repeat(5, 30px);
-    width: 40%; 
+    width: 30%; 
     height: auto;
-    display: inline-block; 
-    margin-left: -110px;
+    margin-left: -95px;
   }
   p {
-    margin: 0px 50px 135px 80px;
-    max-width: 800px;
+    margin: 0px 70px 135px 70px;
+    max-width: 400px;
   }
   .img-container {
     margin-left: 5px;
