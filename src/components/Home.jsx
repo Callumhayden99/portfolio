@@ -11,6 +11,9 @@ function Home() {
         </div>
         <div className="Left-menu">
           <ul className="ul">
+          <NavLink to="/" activeClassName="active">
+              <li className="li-items">Home</li>
+            </NavLink>
             <NavLink to="/projects" activeClassName="active">
               <li className="li-items">Projects</li>
             </NavLink>

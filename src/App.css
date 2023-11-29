@@ -195,6 +195,23 @@ p {
   position: relative;
 }
 
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.icons-container {
+  perspective: 1000px;
+}
+
+.icons-container img:hover {
+  animation: flip 0.6s ease-in-out 1; 
+}
+
 /* project */
 .project-right-content {
   margin-bottom: 128px;
@@ -231,21 +248,37 @@ p {
 
 .img-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 10px;
-  column-gap: 10px;
-  padding-bottom: 20px;
-  overflow-y: scroll;
+  grid-template-columns: repeat(1, 1fr); /* Example for responsive columns */
+  width: 80%;
+  grid-gap: 40px; 
+  margin-bottom: 50px;
+}
+
+.image-box {
+  display: grid;
+  grid-template-rows: auto 1fr; 
+  background-color: #186049; 
+  margin-left: 350px;
+  padding: 40px 50px 80px 50px; 
+  border-radius: 20px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  align-items: center; 
+  text-align: center; 
 }
 
 .snippet-img {
-  border: 3px solid #186049;
-  border-radius: 5px;
+  width: 100%; 
+  max-width: 100%; 
+  grid-row: 1; 
 }
 
+.image-text {
+  grid-row: 2; 
+}
+
+
 /* media */
-@media only screen and (min-width: 1025px) {
+@media only screen and(min-width: 1025px){
   .form-container {
     max-width: 400px;
     padding: 30px;
@@ -259,7 +292,7 @@ p {
     margin-right: 20px;
   }
   p {
-    margin: 0px 50px 135px 300px;
+    margin: 0px 50px 135px 100px;
     max-width: 800px;
   }
 }
