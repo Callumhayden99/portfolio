@@ -38,25 +38,12 @@ function Snippet() {
             <img className="snippet-img" src={dashboard1} alt="Dashboard 1" />
             <div className="image-text">Dashboard 1</div>
           </div>
-
-          <div className="image-box">
-            <img className="snippet-img" src={dashboard2} alt="Dashboard 1" />
-            <div className="image-text">Dashboard 1</div>
-          </div>
-          <div className="image-box">
-            <img className="snippet-img" src={green1} alt="Dashboard 1" />
-            <div className="image-text">Dashboard 1</div>
-          </div>
           <div className="image-box">
             <img className="snippet-img" src={green2} alt="Dashboard 1" />
             <div className="image-text">Dashboard 1</div>
           </div>
           <div className="image-box">
             <img className="snippet-img" src={star1} alt="Dashboard 1" />
-            <div className="image-text">Dashboard 1</div>
-          </div>
-          <div className="image-box">
-            <img className="snippet-img" src={star2} alt="Dashboard 1" />
             <div className="image-text">Dashboard 1</div>
           </div>
         </div>

@@ -36,6 +36,12 @@ body {
   font-size: 50px;
   color: #186049;
   margin-left: 50px;
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.h1:hover {
+  transform: scale(1.05); 
+  color: #186049; 
 }
 
 .h3 {
@@ -43,6 +49,13 @@ body {
   grid-area: header;
   padding-left: 60px;
   color: #186049;
+  transition: transform 0.3s ease, color 0.3s ease; 
+  text-shadow: none; 
+}
+
+.h3:hover {
+  transform: scale(1.05); 
+  color: #186049; 
 }
 
 a {
@@ -184,7 +197,7 @@ p {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
   padding: 20px;
-  margin: 0px 50px 95px 480px;
+  margin: 0px 50px 95px 510px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   max-width: 800px;
