@@ -337,11 +337,11 @@ p {
 
 .snippet-info {
   font-size: 25px;
+  font-weight: bold;
   text-align: center;
-  border: solid 2px #186049;
-  background-color: #186049;
+  background-color: rgb(255, 255, 255, 0.5);
   border-radius: 10px;
-  color: white;
+  color: #186049;
   margin-left: 550px;
   margin-right: 200px;
   padding: 10px;
@@ -364,7 +364,7 @@ p {
 .image-box {
   display: grid;
   grid-template-rows: auto 1fr;
-  background-color: #186049;
+  background-color: white;
   margin-left: 350px;
   padding: 40px 50px 80px 50px;
   border-radius: 20px;
@@ -380,7 +380,7 @@ p {
 }
 
 .image-text-header {
-  color: white;
+  color: #186049;
   font-weight: bold;
   font-size: 26px;
   margin: 10px 0px;
@@ -396,7 +396,6 @@ p {
   margin-top: 10px;
   margin-left: 60px;
   grid-row: 3;
-  background-color: #eeeae6;
   border-radius: 15px;
   width: fit-content;
   padding: 5px;
@@ -411,7 +410,6 @@ p {
   margin-top: 10px;
   margin-left: 120px;
   grid-row: 3;
-  background-color: #eeeae6;
   border-radius: 15px;
   width: fit-content;
   padding: 5px;
@@ -426,7 +424,6 @@ p {
   margin-top: 10px;
   margin-left: 60px;
   grid-row: 3;
-  background-color: #eeeae6;
   border-radius: 15px;
   width: fit-content;
   padding: 5px;
