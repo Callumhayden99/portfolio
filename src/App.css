@@ -148,6 +148,23 @@ a:hover::before {
   padding: 10px;
 }
 
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.form-icons {
+  perspective: 1000px;
+}
+
+.form-icons:hover {
+  animation: flip 0.6s ease-in-out 1;
+}
+
 .contact-section {
   display: grid;
   grid-template-rows: auto auto; /* Define two rows, one for icons and one for form */
