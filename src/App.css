@@ -483,6 +483,9 @@ p {
     margin: 10px 0px;
     grid-row: 2;
   }
+  .image-box {
+    background-color: white;
+  }
   
   .image-text1 {
     display: grid;
@@ -581,6 +584,7 @@ p {
     overflow-y: scroll;
   }
   .image-box {
+    background-color: white;
     margin: 0px 0px 0px 220px;
   }
   .snippet-info {
@@ -711,7 +715,7 @@ p {
   .image-box {
     display: grid;
     grid-template-rows: auto 1fr;
-    background-color: #186049;
+    background-color: white;
     margin-left: 0px;
     margin-right: 50px;
     padding: 20px 20px 30px 20px;
@@ -792,7 +796,7 @@ p {
   .image-box {
     display: grid;
     grid-template-rows: auto 1fr;
-    background-color: #186049;
+    background-color: white;
     margin-left: 0px;
     margin-right: 50px;
     padding: 20px 20px 30px 20px;
@@ -886,7 +890,7 @@ p {
     .image-box {
       display: grid;
       grid-template-rows: auto 1fr;
-      background-color: #186049;
+      background-color: white;
       margin-left: 0px;
       margin-right: 50px;
       padding: 20px 20px 30px 20px;
