@@ -477,7 +477,7 @@ p {
     margin: 0px 0px 0px 340px;
   }
   .image-text-header {
-    color: white;
+    color: #186049;
     font-weight: bold;
     font-size: 26px;
     margin: 10px 0px;
@@ -486,7 +486,6 @@ p {
   .image-box {
     background-color: white;
   }
-  
   .image-text1 {
     display: grid;
     grid-row: 2;
@@ -591,7 +590,7 @@ p {
     margin: 0px 0px 0px 220px;
   }
   .image-text-header {
-    color: white;
+    color: #186049;
     font-weight: bold;
     font-size: 26px;
     margin: 10px 0px;
