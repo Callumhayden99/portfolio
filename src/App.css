@@ -303,11 +303,21 @@ p {
   grid-row: 1; 
 }
 
+.image-text-header{
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  margin: 10px 0px;
+  grid-row: 2; 
+}
+
 .image-text {
   grid-row: 2; 
   color: white;
+  font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
+  grid-row: 3; 
 }
 
 /* media */

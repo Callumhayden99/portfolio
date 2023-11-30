@@ -75,6 +75,7 @@ function Info() {
             imprint on the front-end landscape. 
           </p>
         </div>
+
     </>
   );
 }

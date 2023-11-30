@@ -35,15 +35,23 @@ function Snippet() {
           <div className="snippet-info">Here's some snippets of my previous course work and individual projects that i've previously completed!</div>
           <div className="image-box">
             <img className="snippet-img" src={dashboard1} alt="Dashboard 1" />
-            <div className="image-text">Dashboard 1</div>
+            <div className="image-text-header">Cohort Manager project</div>
+            <div className="image-text">This was my first project that I completed with react by myself and also was apart of my course.<br></br>
+             This is a talk forum where you can create new post's and go on individual post's.</div>
           </div>
           <div className="image-box">
             <img className="snippet-img" src={green2} alt="Dashboard 1" />
-            <div className="image-text">Dashboard 1</div>
+            <div className="image-text-header">Green Grocer's project</div>
+            <div className="image-text">This was my first time going from JS Dom to using react whilst completing my course.<br></br>
+             This was just a shopping cart that you can add and take away items from,<br></br>
+              with the total of the items being addded up.</div>
           </div>
           <div className="image-box">
             <img className="snippet-img" src={star1} alt="Dashboard 1" />
-            <div className="image-text">Dashboard 1</div>
+            <div className="image-text-header">Star wars project</div>
+            <div className="image-text">This project was my first personal project, this was created with HTML, CSS and REACT.JS.<br></br>
+             This is a Stwar wars fan base platform, where you can see all the films, characters and planets.<br></br> 
+             There's also a favourite section where you can add items to see for future reference.</div>
           </div>
         </div>
       </div>
