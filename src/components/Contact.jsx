@@ -10,6 +10,7 @@ function Contacts() {
           <h1 className="h1">Callum Hayden</h1>
           <h3 className="h3">Software Web Developer</h3>
         </div>
+        <div className="welcome-contact">Please feel free to contact me if you have any questions.</div>
         <div className="Left-menu">
           <ul className="ul">
           <NavLink to="/home" activeClassName="active">
@@ -29,6 +30,19 @@ function Contacts() {
             </NavLink>
           </ul>
         </div>
+        <div className="contact-section">
+        <div className="form-icons">
+        <img
+              src="https://www.shareicon.net/data/512x512/2017/06/30/888065_logo_512x512.png"
+              width={55}
+              alt="LinkedIn"
+            />
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/gmail_new_logo-512.png"
+              width={50}
+              alt="Gmail"
+            />
+            </div>
         <div className="form-container">
           <h2 className="h2-contact">Contact form</h2>
           <form className="form">
@@ -47,6 +61,7 @@ function Contacts() {
             <button className="form-button">Submit</button>
           </form>
         </div>
+      </div>
       </div>
     </>
   );
