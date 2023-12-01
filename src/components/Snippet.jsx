@@ -50,7 +50,7 @@ function Snippet() {
             <img className="snippet-img" src={star1} alt="Dashboard 1" />
             <div className="image-text-header">Star wars project</div>
             <div className="image-text3">This project was my first personal project, this was created with HTML, CSS and REACT.JS.<br></br>
-             This is a Stwar wars fan base platform, where you can see all the films, characters and planets.<br></br> 
+             This is a Star wars fan base platform, where you can see all the films, characters and planets.<br></br> 
              There's also a favourite section where you can add items to see for future reference.</div>
           </div>
         </div>

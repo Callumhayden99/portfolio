@@ -10,7 +10,6 @@ function Contacts() {
           <h1 className="h1">Callum Hayden</h1>
           <h3 className="h3">Software Web Developer</h3>
         </div>
-        <div className="welcome-contact">Please feel free to contact me if you have any questions.</div>
         <div className="Left-menu">
           <ul className="ul">
           <NavLink to="/home" activeClassName="active">
@@ -31,6 +30,7 @@ function Contacts() {
           </ul>
         </div>
         <div className="contact-section">
+        <div className="welcome-contact">Please feel free to contact me if you have any questions.</div>
         <div className="form-icons">
         <img
               src="https://www.shareicon.net/data/512x512/2017/06/30/888065_logo_512x512.png"
