@@ -477,6 +477,7 @@ p {
   }
   .snippet-info {
     margin: 0px 0px 0px 340px;
+    
   }
   .image-text-header {
     color: #186049;
@@ -852,7 +853,7 @@ p {
     max-width: 390px;
   }
   .image-box {
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.5);
   }
   @media only screen and (max-width: 350px) {
     .h1 {
