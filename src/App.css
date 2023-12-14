@@ -359,6 +359,7 @@ p {
   width: 80%;
   grid-gap: 40px;
   margin-bottom: 50px;
+  border-radius: 20px;
 }
 
 .image-box {
@@ -367,16 +368,17 @@ p {
   background-color: rgb(255, 255, 255, 0.5);
   margin-left: 350px;
   padding: 40px 50px 80px 50px;
-  border-radius: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   align-items: center;
   text-align: center;
+  border-radius: 20px;
 }
 
 .snippet-img {
   width: 100%;
   max-width: 100%;
   grid-row: 1;
+  border-radius: 10px;
 }
 
 .image-text-header {
@@ -391,6 +393,7 @@ p {
   display: grid;
   grid-row: 2;
   color:#186049;
+  background-color: white;
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
@@ -405,6 +408,7 @@ p {
   display: grid;
   grid-row: 2;
   color:#186049;
+  background-color: white;
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
@@ -419,6 +423,7 @@ p {
   display: grid;
   grid-row: 2;
   color:#186049;
+  background-color: white;
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
@@ -754,7 +759,7 @@ p {
     padding-left: 20px;
   }
   .right-title {
-    padding: 0px;
+    padding: 0px;  
   }
   .right-sub-li {
     padding: 0px;
@@ -817,7 +822,7 @@ p {
 @media only screen and (max-width: 390px) {
   .right-menu {
     font-size: 14px;
-    margin: 30px 0px 0px 60px;
+    margin: 30px 0px 20px 60px;
     width: 245px;
     text-align: center;
     background-color: #fff;
@@ -832,18 +837,18 @@ p {
     display: grid;
     grid-template-columns: repeat(5, 70px);
     justify-content: center;
-    margin-right: 50px;
+    margin-right: 60px;
   }
   .info-title {
     margin-right: 40px;
   }
   p {
-    margin: 0px 70px 135px 20px;
+    margin: 0px 70px 50px 20px;
     width: 280px;
     max-width: 390px;
   }
   .image-box{
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.5);
   }
   @media only screen and (max-width: 350px) {
     .h1 {
