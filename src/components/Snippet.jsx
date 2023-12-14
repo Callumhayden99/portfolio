@@ -44,7 +44,7 @@ function Snippet() {
             <div className="image-text-header">Green Grocer's project</div>
             <div className="image-text2">This was my first time going from JS Dom to using react whilst completing my course.<br></br>
              This was just a shopping cart that you can add and take away items from,<br></br>
-              with the total of the items being addded up.</div>
+              whilst the total of the items in the basket being added up.</div>
           </div>
           <div className="image-box">
             <img className="snippet-img" src={star1} alt="Dashboard 1" />
