@@ -157,7 +157,7 @@ a:hover::before {
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
   justify-content: end;
-  margin: 0px 20px 40px 0px;
+  margin: 0px 20px 40px 20px;
 }
 
 .h2-contact {
@@ -173,9 +173,10 @@ a:hover::before {
   border: #186049 2px solid;
   background: rgb(23, 97, 73, 0.9);
   width: fit-content;
-  margin-left: 620px;
+  place-self: center;
   border-radius: 10px;
   padding: 10px;
+  margin-left: 20px;
 }
 
 @keyframes flip {
@@ -199,8 +200,6 @@ a:hover::before {
   display: grid;
   grid-template-rows: auto auto; /* Define two rows, one for icons and one for form */
   gap: 50px; /* Add some space between the rows */
-  margin-top: -200px;
-  margin-bottom: 50px;
 }
 
 .form-icons {
@@ -220,11 +219,11 @@ a:hover::before {
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-bottom: 60px;
   text-align: center;
-  margin-top: -50px;
-  margin-left: 720px;
-  margin-bottom: 50px;
+  place-self: center;
 }
 
 .input {
@@ -259,29 +258,31 @@ a:hover::before {
   display: grid;
   text-align: center;
   grid-template-columns: repeat(5, 80px);
-  margin-left: 760px;
-  margin-top: -100px;
+  justify-content: center;
+  margin-left: 40px;
 }
 
 .info-title {
+  display: grid;
   color: #186049;
   text-align: center;
+  justify-content: center;
 }
 
 p {
+  display: block; /* or 'grid' if it contains grid items */
   color: #333;
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
   padding: 20px;
-  margin: 0px 50px 95px 510px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   max-width: 800px;
   line-height: 1.6;
   font-size: 1rem;
   border: 1px solid #ddd;
-  z-index: 10;
-  position: relative;
+  margin: 0 auto; /* This centers the block horizontally */
+  margin-bottom: 20px;
 }
 
 @keyframes flip {
@@ -336,16 +337,18 @@ p {
 }
 
 .snippet-info {
+  display: grid;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   background-color: rgb(255, 255, 255, 0.5);
   border-radius: 10px;
   color: #186049;
-  margin-left: 550px;
-  margin-right: 200px;
   padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 80px;
+  width: fit-content;
+  justify-self: center;
 }
 
 .snippet-info:hover {
@@ -356,26 +359,26 @@ p {
 .img-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  width: 80%;
   grid-gap: 40px;
-  margin-bottom: 50px;
-  border-radius: 20px;
+  margin: 0px 0px 30px 35px;
+  width: 100%;
 }
-
 .image-box {
   display: grid;
   grid-template-rows: auto 1fr;
   background-color: rgb(255, 255, 255, 0.5);
-  margin-left: 350px;
-  padding: 40px 50px 80px 50px;
+  margin-left: 0px;
+  margin-right: 80px;
+  padding: 20px 20px 30px 20px;
+  border-radius: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   align-items: center;
   text-align: center;
-  border-radius: 20px;
+  width: 900px;
+  justify-self: center;
 }
-
 .snippet-img {
-  width: 100%;
+  display: grid;
   max-width: 100%;
   grid-row: 1;
   border-radius: 10px;
@@ -396,7 +399,7 @@ p {
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
-  margin-left: 60px;
+  justify-self: center;
   grid-row: 3;
   border-radius: 15px;
   width: fit-content;
@@ -410,7 +413,7 @@ p {
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
-  margin-left: 120px;
+  justify-self: center;
   grid-row: 3;
   border-radius: 15px;
   width: fit-content;
@@ -424,7 +427,7 @@ p {
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
-  margin-left: 60px;
+  justify-self: center;
   grid-row: 3;
   border-radius: 15px;
   width: fit-content;
@@ -434,49 +437,21 @@ p {
 /* media */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .form-container {
+    display: grid;
+    row-gap: 20px;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
     max-width: 400px;
-    padding: 30px;
-    margin: 0px 0px 150px 500px;
-  }
-  .welcome-contact {
-    margin-left: 400px;
-  }
-  .contact-section {
-    display: grid;
-    grid-template-rows: auto auto; /* Define two rows, one for icons and one for form */
-    gap: 20px; /* Add some space between the rows */
-    margin-top: -300px;
-    margin-bottom: 80px;
-  }
-  .form-icons {
-    display: grid;
-    grid-template-columns: repeat(
-      2,
-      auto
-    ); /* Define two columns for the icons */
-    justify-content: center; /* Center the icons horizontally */
-    grid-gap: 20px;
-  }
-  .form-container {
-    display: grid;
-    row-gap: 0px;
-    max-width: 400px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-left: 490px;
-    margin-bottom: 0px;
+    margin-bottom: 60px;
+    text-align: center;
+    place-self: center;
   }
-  .icons-container {
-    margin-left: 480px;
-    grid-template-columns: repeat(5, 100px);
-  }
-  p {
-    margin: 20px auto;
-    max-width: 800px;
-  }
-  .snippet-info {
-    margin: 0px 0px 0px 340px;
-  }
+ 
   .image-text-header {
     color: black;
     font-weight: bold;
@@ -485,49 +460,9 @@ p {
     grid-row: 2;
   }
   .image-box {
-    background-color: rgb(255, 255, 255, 0.5);
-  }
-  .image-text1 {
-    display: grid;
-    grid-row: 2;
-    color: #186049;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 0px;
-    grid-row: 3;
-    border-radius: 15px;
-    width: fit-content;
-    padding: 5px;
+    width: 700px;
   }
 
-  .image-text2 {
-    display: grid;
-    grid-row: 2;
-    color: #186049;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 0px;
-    grid-row: 3;
-    border-radius: 15px;
-    width: fit-content;
-    padding: 5px;
-  }
-
-  .image-text3 {
-    display: grid;
-    grid-row: 2;
-    color: #186049;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 0px;
-    grid-row: 3;
-    border-radius: 15px;
-    width: fit-content;
-    padding: 5px;
-  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -537,38 +472,11 @@ p {
     margin: auto;
     margin-right: 10px;
   }
-  .right-menu {
-    margin-left: 380px;
-    margin-bottom: 80px;
-    width: 600px;
-  }
-  .welcome-contact {
-    margin-left: 190px;
-  }
-  .contact-section {
-    gap: 20px; /* Add some space between the rows */
-    margin-top: -300px;
-    margin-bottom: 80px;
-  }
-  .form-icons {
-    grid-gap: 20px;
-    margin-bottom: 25px;
-  }
-  .form-container {
-    padding: 20px;
-    margin-left: 275px;
-    margin-bottom: 0px;
-  }
   a {
     margin-bottom: 13px;
   }
-  .icons-container {
-    margin-left: 330px;
-    margin-top: 0px;
-  }
   p {
-    margin: 0px 50px 135px 80px;
-    max-width: 800px;
+    width: 600px;
   }
   .img-container {
     display: grid;
@@ -578,16 +486,7 @@ p {
     width: 100%;
   }
   .image-box {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    background-color: rgb(255, 255, 255, 0.5);
-    margin-left: 0px;
-    margin-right: 50px;
-    padding: 20px 20px 30px 20px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    text-align: center;
+  width: 600px;
   }
   .snippet-img {
     display: grid;
@@ -650,137 +549,23 @@ p {
 }
 
 @media only screen and (max-width: 800px) {
-  .right-menu {
-    margin-left: 20px;
-    width: 700px;
-  }
-  .welcome-contact {
-    margin-left: 60px;
-  }
-  .contact-section {
-    gap: 20px; /* Add some space between the rows */
-    margin-top: 0px;
-    margin-bottom: 80px;
-  }
-  .form-icons {
-    grid-gap: 20px;
-    margin-bottom: 25px;
-    margin-left: 15px;
-  }
-  .form-container {
-    padding: 20px;
-    margin-left: 165px;
-    margin-bottom: 0px;
-  }
   a {
     margin-bottom: 13px;
   }
-  .icons-container {
-    margin-left: 200px;
-    margin-top: 0px;
-  }
-  .info-title {
-    margin-left: 30px;
-  }
   p {
-    margin: 0px 50px 135px 80px;
-    max-width: 800px;
-  }
-  .img-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 40px;
-    margin: 0px 0px 30px 35px;
-    width: 100%;
+    width: 400px;
   }
   .image-box {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    background-color: rgb(255, 255, 255, 0.5);
-    margin-left: 0px;
-    margin-right: 50px;
-    padding: 20px 20px 30px 20px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    text-align: center;
+  width: 480px;
   }
-  .snippet-img {
-    display: grid;
-    max-width: 100%;
-    grid-row: 1;
-  }
-  
   .snippet-info {
-    margin: 0px 50px 0px 5px;
-  }
-
-  .image-text-header {
-    color: black;
-    font-weight: bold;
-    font-size: 26px;
-    margin: 10px 0px;
-    grid-row: 2;
-  }
-
-  .image-text1 {
-    display: grid;
-    grid-row: 2;
-    color: #186049;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 0px;
-    grid-row: 3;
-    border-radius: 15px;
-    width: fit-content;
-    padding: 5px;
-  }
-
-  .image-text2 {
-    display: grid;
-    grid-row: 2;
-    color: #186049;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 0px;
-    grid-row: 3;
-    border-radius: 15px;
-    width: fit-content;
-    padding: 5px;
-  }
-
-  .image-text3 {
-    display: grid;
-    grid-row: 2;
-    color: #186049;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 0px;
-    grid-row: 3;
-    border-radius: 15px;
-    width: fit-content;
-    padding: 5px;
+   margin-right: 90px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   #root {
     max-width: 600px;
-  }
-  .right-menu {
-    display: grid;
-    font-size: 17px;
-    width: 450px;
-    justify-content: end;
-    margin-left: 50px;
-  }
-  .form-container {
-    max-width: 400px;
-    padding: 30px;
-    margin: 20px 0px 190px 50px;
   }
   .project-right-content {
     display: grid;
@@ -797,61 +582,16 @@ p {
   .right-li {
     padding: 0px;
   }
-  .welcome-contact {
-    margin-left: 70px;
-    margin-right: 40px;
-  }
-  .contact-section {
-    gap: 20px; /* Add some space between the rows */
-    margin-top: 0px;
-    margin-bottom: 80px;
-  }
-  .form-icons {
-    grid-gap: 20px;
-    margin-bottom: -30px;
-  }
   .form-container {
-    padding: 20px;
-    margin-left: 65px;
-    margin-bottom: 0px;
-  }
-  .icons-container {
-    margin-left: 100px;
-    margin-top: 20px;
-  }
-  .info-title {
-    margin-left: 40px;
+    width: 300px;
   }
   p {
-    margin: 0px 50px 135px 85px;
-    max-width: 800px;
-  }
-  .img-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 40px;
-    margin: 0px 0px 30px 35px;
-    width: 100%;
+    width: 300px;
   }
   .image-box {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    background-color: rgb(255, 255, 255, 0.5);
-    margin-left: 0px;
-    margin-right: 50px;
-    padding: 20px 20px 30px 20px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    text-align: center;
+  width: 330px;
   }
-  .snippet-img {
-    width: 500px;
-    grid-row: 1;
-  }
-  .snippet-info {
-    margin: 0px 50px 0px 5px;
-  }
+ 
 }
 
 @media only screen and (max-width: 450px) {
@@ -864,13 +604,6 @@ p {
   }
   .h3 {
     padding-left: 20px;
-  }
-  .right-menu {
-    display: grid;
-    font-size: 17px;
-    width: 350px;
-    justify-content: center;
-    margin-left: 30px;
   }
   .ul {
     padding-left: 20px;
@@ -886,9 +619,8 @@ p {
     padding: 0px;
   }
   .form-container {
-    max-width: 80%;
-    padding: 0px 0px 0px 0px;
-    margin: 20px 0px 20px 50px;
+    margin-right: 10px;
+    width: 270px;
   }
   .input,
   .form-button {
@@ -899,73 +631,33 @@ p {
     display: grid;
   }
   .icons-container {
-    display: grid;
-    justify-content: center;
-    margin-right: 50px;
+    grid-template-columns: repeat(5, 70px);
   }
   p {
-    margin: 0px 45px 135px 80px;
-    max-width: 400px;
-  }
-  .img-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 40px;
-    margin: 0px 0px 30px 35px;
-    width: 100%;
+    width: 250px;
   }
   .left-menu {
     grid-area: left-menu;
   }
   .welcome-contact {
     margin: 0px 10px 0px 30px;
-  }
-  .image-box {
-    grid-template-rows: auto 1fr;
-    background-color: rgb(255, 255, 255, 0.5);
-    margin-left: 0px;
-    margin-right: 50px;
-    padding: 20px 20px 30px 20px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    text-align: center;
-  }
-  .snippet-img {
-    width: 500px;
-    grid-row: 1;
+  }  
+  .image-box{
+    width: 250px;
   }
 }
 @media only screen and (max-width: 390px) {
-  .right-menu {
-    font-size: 14px;
-    margin: 30px 0px 20px 60px;
-    width: 245px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 5px;
-    padding-bottom: 20px;
-    max-width: 390px;
-  }
   .form-container {
-    margin: 20px 20px 20px 40px;
+    width: 200px;
   }
   .icons-container {
-    display: grid;
-    grid-template-columns: repeat(5, 70px);
-    justify-content: center;
-    margin-right: 60px;
-  }
-  .info-title {
-    margin-right: 40px;
+    grid-template-columns: repeat(5, 60px);
   }
   p {
-    margin: 0px 70px 50px 20px;
-    width: 280px;
-    max-width: 390px;
+    width: 240px;
   }
-  .image-box {
-    background-color: rgb(255, 255, 255, 0.5);
+  .image-box{
+    width: 200px;
   }
   @media only screen and (max-width: 350px) {
     .h1 {
@@ -1000,40 +692,14 @@ p {
       padding: 0px;
     }
     .icons-container {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(5, 60px);
-      margin-right: 60px;
-    }
-    .info-title {
-      margin-right: 20px;
+      grid-template-columns: repeat(5, 60px);margin-right: 10px;
     }
     p {
       margin: 0px 45px 135px 15px;
       max-width: 250px;
     }
-    .img-container {
-      margin: 0px 0px 30px 35px;
-      width: 100%;
-    }
-    .image-box {
-      display: grid;
-      grid-template-rows: auto 1fr;
-      background-color: rgb(255, 255, 255, 0.5);
-      margin-left: 0px;
-      margin-right: 50px;
-      padding: 20px 20px 30px 20px;
-      border-radius: 20px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      align-items: center;
-      text-align: center;
-    }
     .welcome-contact {
       margin: 0px 0px 0px 20px;
-    }
-    .snippet-img {
-      width: 300px;
-      grid-row: 1;
     }
   }
 }
